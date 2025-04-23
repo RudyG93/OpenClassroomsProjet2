@@ -64,7 +64,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Navigation ***********/
+/*********** Navigation ***********/
 
 header * {
     display: flex;
@@ -73,6 +73,7 @@ header * {
 .navigation {
     justify-content: space-between;
     height: 79px;
+    margin-bottom: 30px;
 }
 
 .navigation__logo {
@@ -86,7 +87,6 @@ header * {
 }
 
 .navigation__menu-item {
-    list-style: none;
     padding: 20px 0px;
 }
 
@@ -94,6 +94,115 @@ header * {
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
+
+/*********** Search ***********/
+
+/* Headline */
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    height: 53px;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.headline__title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.headline__subtitle {
+    margin: 0;
+}
+
+/* Search__bar */
+
+.search__bar {
+    display: flex;
+    height: 49px;
+    margin-bottom: 30px;
+}
+
+.search__bar-icon {
+    display: flex;
+    width: 49px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+}
+
+.fa-location-dot {
+    color: black;
+}
+
+.search__bar-input {
+    border: 1px solid #F2F2F2;
+    font-size: 18px;
+    font-weight: 700;
+    justify-items: center;
+
+}
+
+.search__bar-input::placeholder {
+    font-size: 18px;
+}
+
+.search__bar-button {
+    width: 132px;
+    font-size: 18px;
+    font-weight: 700;
+    justify-items: center;
+    color: #FFF;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+
+}
+
+/* Filter__bar */
+
+.filter__bar {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 30px;
+    height: 49px;
+    gap: 30px;
+    font-weight: 700;
+}
+
+.filter__bar-title {
+    font-size: 18px;
+}
+
+.filter__bar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.filter__bar-item {
+    display: flex;
+    height: 49px;
+    border: 2px solid #D9D9D9;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 17px;
+    gap: 10px;
+    padding: 0px 20px;
+}
+
+.filter__bar-item:hover {
+    background-color: #DEEBFF;
+    border-radius: 25px;
+}
+
+/* Info__bar */
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {

@@ -377,6 +377,27 @@ header * {
     padding-left: 15px;
 }
 
+/*********** Footer ***********/
+
+.footer {
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+.footer__item {
+    padding-left: 50px;
+    width: 33%;
+}
+
+.footer__item-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer__item-txt {
+    font-size: 16px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/

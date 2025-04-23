@@ -15,6 +15,7 @@
 
 body {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     justify-self: center;
     margin: 0;
@@ -25,13 +26,9 @@ body {
 }
 
 .main-container {
-    width: 100%;
     padding: 0 50px;
     gap: 35px;
     justify-content: center;
-    max-width: 1440px;
-    min-width: 320px;
-    box-sizing: border-box;
 }
 
 a {
@@ -69,28 +66,28 @@ a {
 
 /****** Navigation ***********/
 
-.navigation {
+header * {
     display: flex;
+}
+
+.navigation {
     justify-content: space-between;
-    width: 100%;
     height: 79px;
 }
 
 .navigation__logo {
-    display: flex;
     padding: 30px 50px;
 }
 
 .navigation__menu {
-    display: flex;
     gap: 68px;
     padding: 0px 50px;
+    height: 35px;
 }
 
 .navigation__menu-item {
-    display: flex;
     list-style: none;
-    padding: 30px 0px 0px 0px;
+    padding: 20px 0px;
 }
 
 .navigation__menu-item:hover {
